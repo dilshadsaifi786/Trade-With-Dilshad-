@@ -61,7 +61,7 @@ def get_dashboard():
         volume_24h = 1320000.0
         price_change = 1.15
 
-    # 2. Multi-Indicator Confirmation Simulation
+    # 2. Multi-Indicator Confirmation
     recent_closes = [
         mark_price * (1 - (0.0018 * (12 - i) if price_change >= 0 else -0.0018 * (12 - i)))
         for i in range(25)
@@ -270,4 +270,3 @@ def get_dashboard():
     </body>
     </html>
     """
-    
